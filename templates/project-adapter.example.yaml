@@ -1,0 +1,34 @@
+framework:
+  version: 0.1.0
+  source: https://github.com/KouteiSystems/orchestrator-framework
+  release: v0.1.0
+  commit: REPLACE_WITH_RELEASE_COMMIT_SHA
+  digest:
+    algorithm: sha256
+    artifact: REPLACE_WITH_EXACT_RELEASE_ARTIFACT_NAME
+    value: REPLACE_WITH_VERIFIED_DIGEST
+  adopted_at: 2026-01-01
+  distribution: vendored
+
+project:
+  coordinator_bootstrap: docs/orchestrator/COORDINATOR.md
+  work_queue: docs/BACKLOG.md
+  packet_root: docs/orchestrator/packets
+  handoff_root: docs/handoffs
+  protected_surfaces: []
+  validation_commands: []
+  redaction_rules: []
+
+authority:
+  local_mutation: explicit_packet_scope
+  external_mutation: explicit_human_approval
+  production: human_only
+
+update_policy:
+  check: read-only
+  apply: explicit-local-approval
+  freeze_when:
+    - active_packet
+    - active_provider_or_evidence_lease
+    - release_freeze
+    - unresolved_framework_migration

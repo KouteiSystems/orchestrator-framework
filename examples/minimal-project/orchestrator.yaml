@@ -1,0 +1,22 @@
+framework:
+  version: 0.1.0
+  release: v0.1.0
+  commit: SYNTHETIC_RELEASE_COMMIT
+  digest:
+    algorithm: sha256
+    artifact: synthetic-release-archive.tar.gz
+    value: SYNTHETIC_DIGEST_ONLY
+  distribution: vendored
+
+project:
+  coordinator_bootstrap: docs/COORDINATOR.md
+  work_queue: docs/WORK.md
+  protected_surfaces:
+    - docs/WORK.md
+  validation_commands:
+    - example-test-command
+
+authority:
+  local_mutation: explicit_packet_scope
+  external_mutation: explicit_human_approval
+  production: human_only

@@ -8,7 +8,9 @@
 - Write set:
 - Dependencies:
 - Authority lane:
-- Approval points:
+- Execution batch and completion boundary:
+- Human gate (or `none`): exact bounded action batch; governing authority rule, or protected consequence and why validation/review/rollback is insufficient; required evidence; expiry:
+- Delay or expiry cost:
 - Required validation:
 - Independent-review manifest:
 - Expected artifacts and postconditions:

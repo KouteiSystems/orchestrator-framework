@@ -1,7 +1,7 @@
 framework:
-  version: 0.1.0
+  version: 0.1.1
   source: https://github.com/KouteiSystems/orchestrator-framework
-  release: v0.1.0
+  release: v0.1.1
   commit: REPLACE_WITH_RELEASE_COMMIT_SHA
   digest:
     algorithm: sha256

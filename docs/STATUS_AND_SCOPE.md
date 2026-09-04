@@ -2,7 +2,7 @@
 
 ## Release posture
 
-Version `0.1.0` is a manual, supervised framework. Its documents and templates help a human and capable host coordinate work consistently. They are not an executable controller and cannot prove that a host performed an action.
+Version `0.1.1` is a manual, supervised framework. Its documents and templates help a human and capable host coordinate work consistently. They are not an executable controller and cannot prove that a host performed an action.
 
 ## In scope
 

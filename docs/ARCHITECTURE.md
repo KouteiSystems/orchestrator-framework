@@ -32,8 +32,18 @@ Typed CLI, API, or MCP integrations may carry out approved actions. They do not 
 
 Stop states are `WAITING_INPUT`, `WAITING_APPROVAL`, `BLOCKED`, `ABORTED`, and `SUPERSEDED`. Advancement is fail-closed: absent, ambiguous, or unverified receipts never count as success.
 
-## Three reusable controls
+Lifecycle states and receipts are observability records, not mandatory human checkpoints. Work
+that remains inside its declared authority and ownership may advance continuously from `READY`
+through `REVIEW` in one supervised run when its postconditions are validated. Use
+`WAITING_APPROVAL` only at an actual authority boundary or unresolved material product decision.
+Stop only the affected action or packet; independent non-colliding work remains eligible to
+advance.
+
+## Four reusable controls
 
 1. **Schema-to-consumer compatibility:** identify all consumers before changing a shared schema; prove the post-change contract through a real integration boundary.
 2. **Failure-to-control learning:** convert confirmed incident causes into a reusable guard, test, contract, or checklist item after read-only reconciliation.
 3. **Typed-interface-first hosted actions:** prefer typed, inspectable interfaces with explicit postconditions over visual inference; retain a supervised fallback when typed receipts are unavailable.
+4. **Proportional gating and delay control:** treat delay as a project risk, execute routine
+   reversible work in coherent validated batches, and reserve human stops for consequences that
+   automation, review, or rollback cannot safely contain.

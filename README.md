@@ -2,7 +2,7 @@
 
 A host-neutral, human-governed framework for coordinating bounded AI-agent work with explicit authority, evidence, review, and safe versioned adoption.
 
-> **Status:** `v0.1.0` is a manual, supervised, docs-and-templates release. It does not launch agents, persist a controller ledger, or authorize unattended external or production actions.
+> **Status:** `v0.1.1` is a manual, supervised, docs-and-templates release. It does not launch agents, persist a controller ledger, or authorize unattended external or production actions.
 
 ## What this release provides
 

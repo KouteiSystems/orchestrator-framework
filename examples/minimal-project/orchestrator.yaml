@@ -1,6 +1,6 @@
 framework:
-  version: 0.1.0
-  release: v0.1.0
+  version: 0.1.1
+  release: v0.1.1
   commit: SYNTHETIC_RELEASE_COMMIT
   digest:
     algorithm: sha256

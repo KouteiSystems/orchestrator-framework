@@ -13,4 +13,4 @@ Minimum capability statement:
 - cleanup guarantees;
 - supervised fallback.
 
-Version `0.1.0` provides guidance only. It does not ship a native transport.
+Version `0.1.1` provides guidance only. It does not ship a native transport.
